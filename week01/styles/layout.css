@@ -42,10 +42,13 @@ a {
 }
 main {
   background-color: rgb(139, 137, 123);
-  padding-bottom: 200px;
   margin: 0;
   font-size: medium;
   text-align: left;
+}
+
+main img {
+  width: 70%;
 }
 
 aside {
