@@ -1,0 +1,128 @@
+* {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+header {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+header h1 {
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(63, 1, 90);
+  color: aliceblue;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  background-color: gray;
+  padding-right: 40px;
+}
+
+nav a {
+  justify-content: space-around;
+  padding: 10px 0 10px 0;
+  text-decoration: none;
+  font-size: medium;
+  color: black;
+}
+
+nav a:hover {
+  color: rgb(63, 1, 90);
+  font-size: larger;
+  font-weight: bolder;
+}
+
+nav a:active {
+  color: rgb(255, 230, 6);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+footer {
+  background-color: rgb(63, 1, 90);
+  text-align: center;
+  font-size: medium;
+}
+
+footer p:first-of-type {
+  padding-top: 15px;
+  color: aliceblue;
+}
+
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
+}
+/* Class Selectors and IDs */
+
+.card {
+  border: 1px solid blue;
+  border-radius: 12px;
+  margin: 10px;
+  /* padding: 15px; */
+}
+
+.card h2 {
+  background-color: rgb(63, 1, 90);
+  border-top: 1px solid blue;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  padding: 8px;
+  color: aliceblue;
+}
+
+/* first setion */
+.card img:first-of-type {
+  float: right;
+  width: 100px;
+  padding: 15px 15px 10px 10px;
+}
+
+.card p:first-of-type {
+  padding: 15px 5px 10px 10px;
+}
+
+.card h2:nth-of-type(2) {
+  background-color: white;
+  color: black;
+  border: none;
+  border-bottom: .5px solid cadetblue;
+  max-width: 90%;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.card figure {
+  float: left;
+  padding: 8px 5px 10px 10px;
+}
+
+.card p:nth-of-type(2) {
+  padding: 15px;
+}
+
+/* second section */
+.card ul {
+  padding: 30px;
+}
