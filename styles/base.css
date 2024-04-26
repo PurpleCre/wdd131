@@ -95,7 +95,7 @@ footer p:last-of-type {
 /* first setion */
 .card img:first-of-type {
   float: right;
-  width: 100px;
+  /* width: 100px; */
   padding: 15px 15px 10px 10px;
 }
 
