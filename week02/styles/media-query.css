@@ -10,7 +10,7 @@ header, main, footer {
     background-color: rgba(52, 7, 252, 0.4);
 }
 
-main {
+.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
