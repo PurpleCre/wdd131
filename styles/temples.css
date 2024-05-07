@@ -1,0 +1,122 @@
+/* Mobile */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  border: 2px solid rgb(151, 39, 226);
+  /* border: 2px;
+  border-color: #333; */
+  /* border-style: */
+  font-family: "Shadows Into Light", cursive;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  background-color: rgb(151, 39, 226);
+  text-align: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  display: block;
+  color: #eee;
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav a {
+  display: none;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #eee;
+}
+
+main {
+  display: grid;
+  max-width: 800px;
+  margin: 0 auto; 
+  padding: 1.5rem 0.75rem;
+  gap: 20px;
+  justify-content: center;
+}
+
+main h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem .1rem;
+}
+
+figcaption {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+}
+
+figure:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+footer {
+  background-color: rgb(63, 1, 90);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: medium;
+}
+
+footer p:first-of-type {
+  padding-top: 15px;
+  color: aliceblue;
+}
+
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
+}
+
+/* Class selectots and ID's */
+
+#menu {
+  display: block;
+  position: absolute;
+  top: 1px;
+  text-decoration: none;
+  right: 30px;
+}
+
+#menu::before {
+  content: "≡";
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0.5rem 0.75r;
+  padding-right: 0;
+  background-color: inherit;
+  color: black;
+}
+
+.show #menu::before {
+  content: "✖";
+  font-size: 2.5rem;
+}
+
+.show a {
+  display: block;
+}
+
+.show h1 {
+  display: none;
+}

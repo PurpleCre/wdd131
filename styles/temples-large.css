@@ -1,0 +1,40 @@
+@media screen and (min-width: 450px) {
+  #menu {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  main {
+    display: block;
+  }
+
+  main h1 {
+    color: #ec0000;
+  }
+
+  /* Class Selectors and ID's */
+
+  .show h1 {
+    display: block;
+  }
+
+  .pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+  }
+}
