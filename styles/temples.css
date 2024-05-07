@@ -44,13 +44,13 @@ nav a:hover {
 main {
   display: grid;
   max-width: 800px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 1.5rem 0.75rem;
   gap: 20px;
   justify-content: center;
 }
 
-main h1 {
+main h2 {
   text-align: center;
   padding-bottom: 10px;
   font-weight: 900;
@@ -59,7 +59,7 @@ main h1 {
 figure img {
   width: 100%;
   height: auto;
-  padding: 1.5rem .1rem;
+  padding: 1.5rem 0.1rem;
 }
 
 figcaption {
@@ -102,7 +102,6 @@ footer p:last-of-type {
   content: "≡";
   font-size: 3rem;
   font-weight: 700;
-  padding: 0.5rem 0.75r;
   padding-right: 0;
   background-color: inherit;
   color: black;
