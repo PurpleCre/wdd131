@@ -1,0 +1,54 @@
+@media screen and (min-width: 500px) {
+  main {
+    display: block;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  section {
+    position: absolute;
+    background-color: yellow;
+    font-size: small;
+  }
+
+  h2 {
+    font-size: 2rem;
+    display: block;
+    color: yellow;
+    background-color: rgb(150, 6, 6);
+    width: 100%;
+  }
+
+  section img {
+    display: none;
+  }
+
+  section:first-of-type {
+    top: 0.4rem;
+    left: 0.5rem;
+  }
+
+  section:last-of-type {
+    bottom: 0.1rem;
+    right: 0.5rem;
+  }
+
+  p {
+    padding: 0 20px 0 20px;
+  }
+  footer {
+    font-size: small;
+  }
+
+  /* Classes and Id's*/
+
+  #weather span{
+    display: block;
+    font-size: 3rem;
+    height: auto;
+  }
+}
