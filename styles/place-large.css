@@ -45,8 +45,12 @@
   }
 
   /* Classes and Id's*/
+  
+  #weather::after {
+    display: block;
+  }
 
-  #weather span{
+  #weather span {
     display: block;
     font-size: 3rem;
     height: auto;
