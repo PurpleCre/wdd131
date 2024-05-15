@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Loading</title>
+    <meta name="description" content="Lazy Loading practice for images" />
+    <meta name="author" content="Panashe Gonese" />
+    <link rel="stylesheet" href="styles/lazy-loading.css" />
+    <script src="scripts/lazy-loading.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lazy Loading 101</h1>
+    </header>
+    <main>
+      <img
+        src="//via.placeholder.com/400x600?text=Best+Placeholder+Ever"
+        alt=""
+        width="400"
+        height="600"
+      /><img
+        src="//via.placeholder.com/400x600?text=Best+Placeholder+Ever"
+        alt=""
+        width="400"
+        height="600"
+      /><img
+        src="//via.placeholder.com/400x600?text=Best+Placeholder+Ever"
+        alt=""
+        width="400"
+        height="600"
+        loading="lazy"
+      /><img
+        src="//via.placeholder.com/400x600?text=Best+Placeholder+Ever"
+        alt=""
+        width="400"
+        height="600"
+        loading="lazy"
+      /><img
+        src="//via.placeholder.com/400x600?text=Best+Placeholder+Ever"
+        alt=""
+        width="400"
+        height="600"
+        loading="lazy"
+      /><img
+        src="images/awe.jpg"
+        alt=""
+        width="400"
+        height="600"
+        loading="lazy"
+      />
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🌴 Panashe Gonese 🌴 Zimbabwe</p>
+      <p id="lastmodified"></p>
+    </footer>
+  </body>
+</html>

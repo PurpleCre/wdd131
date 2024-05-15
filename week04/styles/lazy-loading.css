@@ -1,0 +1,46 @@
+* {
+  max-width: 980px;
+}
+
+h1 {
+  text-align: center;
+}
+main {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin: 3px auto;
+  background: black;
+  animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+footer {
+  background-color: rgb(63, 1, 90);
+  text-align: center;
+  /* font-family: "Oswald", sans-serif; */
+  font-size: medium;
+}
+
+footer p:first-of-type {
+  padding-top: 15px;
+  color: aliceblue;
+}
+
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
+}
