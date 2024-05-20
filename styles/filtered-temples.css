@@ -1,0 +1,128 @@
+/* Mobile */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  border: 2px solid rgb(151, 39, 226);
+  font-family: "Shadows Into Light", cursive;
+  margin: 0 auto;
+  background: #4b0458;
+}
+
+header {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  background-color: rgb(151, 39, 226);
+  text-align: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  display: block;
+  color: #eee;
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav a {
+  display: none;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #eee;
+}
+
+main {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 0.75rem;
+  gap: 20px;
+  justify-content: center;
+}
+
+main h2 {
+  color: #8085ff;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+
+img {
+  height: auto;
+  padding: 0;
+}
+
+footer {
+  background-color: rgb(63, 1, 90);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: medium;
+}
+
+footer p:first-of-type {
+  padding-top: 15px;
+  color: aliceblue;
+}
+
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
+}
+
+/* Class selectots and ID's */
+
+#menu {
+  display: block;
+  position: absolute;
+  top: 1px;
+  text-decoration: none;
+  right: 30px;
+}
+
+#menu::before {
+  content: "≡";
+  font-size: 3rem;
+  font-weight: 700;
+  padding-right: 0;
+  background-color: inherit;
+  color: black;
+}
+
+.show #menu::before {
+  content: "✖";
+  font-size: 2.5rem;
+}
+
+.show a {
+  display: block;
+}
+
+.show h1 {
+  display: none;
+}
+
+.card {
+  border: 2px solid black;
+  transition: 0.5s;
+  width: 300px;
+  box-shadow: 0 0 50px #000;
+  font-family: "Abel", sans-serif;
+}
+
+.card p {
+  padding-left: 10px;
+  margin: 0;
+  color: #b0daff;
+}
+
+.card span {
+  font-style: italic;
+  color: #ff9a9a;
+}
