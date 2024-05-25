@@ -48,11 +48,6 @@
   
   #weather::after {
     display: block;
-  }
-
-  #weather span {
-    display: block;
-    font-size: 3rem;
-    height: auto;
+    content: " ⛅";
   }
 }
