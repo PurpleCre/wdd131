@@ -112,30 +112,27 @@ const temples = [
   },
 ];
 
-function createTempleCard(temple) {
+function createTempleCard(temple, img) {
   const card = document.createElement("div");
 
   const templeName = document.createElement("h2");
   const location = document.createElement("p");
   const dedicated = document.createElement("p");
   const area = document.createElement("p");
-  const image = document.createElement("img");
 
   templeName.textContent = temple.templeName;
   templeName.style.cssText = `font-size: large; padding: 25px 0;`;
   location.innerHTML = `<span>Location:</span> ${temple.location}`;
   dedicated.innerHTML = `<span>Dedicated:</span> ${temple.dedicated}`;
   area.innerHTML = `<span>Area:</span> ${temple.area}`;
-  image.setAttribute("src", `${temple.imageUrl}`);
-  image.setAttribute("loading", "lazy");
-  image.setAttribute("alt", `${temple.templeName} Temple`);
-  image.style.width = "100%";
+  img.setAttribute("src", `${temple.imageUrl}`);
+  img.setAttribute("alt", `${temple.templeName} Temple`);
 
   card.appendChild(templeName);
   card.appendChild(location);
   card.appendChild(dedicated);
   card.appendChild(area);
-  card.appendChild(image);
+  card.appendChild(img);
   card.className = "card";
 
   pics.appendChild(card);
@@ -145,17 +142,16 @@ function getCards(temples) {
   pics.innerHTML = "";
   let filteredTemples = [];
 
+  function getYear(temple) {
+    let year = temple.dedicated.split(",", 1);
+    return year;
+  }
+
   if (header.textContent !== "Home") {
     if (header.textContent === "Old") {
-      filteredTemples = temples.filter(
-        (temple) => parseInt(temple.dedicated[0]) < 2
-      );
-      console.log("old");
+      filteredTemples = temples.filter((temple) => getYear(temple) < 1900);
     } else if (header.textContent === "New") {
-      filteredTemples = temples.filter(
-        (temple) => parseInt(temple.dedicated[0]) >= 2
-      );
-      console.log("new");
+      filteredTemples = temples.filter((temple) => getYear(temple) >= 200);
     } else if (header.textContent === "Large") {
       filteredTemples = temples.filter((temple) => temple.area > 90000);
     } else if (header.textContent === "Small") {
@@ -166,7 +162,12 @@ function getCards(temples) {
   }
 
   filteredTemples.forEach((temple) => {
-    createTempleCard(temple);
+    const image = document.createElement("img");
+    if (filteredTemples.indexOf(temple) > 5) {
+      image.setAttribute('loading', 'lazy');
+      console.log("enter")
+    }
+    createTempleCard(temple, image);
   });
 }
 
