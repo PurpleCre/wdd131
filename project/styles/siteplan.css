@@ -1,0 +1,51 @@
+:root {
+    --main-color: #7a007fff;
+    --accent-color2: rgb(222 149 255);
+    --text-color: rgb(10 48 118);
+    --bg-color: #b4c5e4ff;
+    --accent-color1: rgb(255, 115, 0);
+
+    --main-font: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--main-font);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 14px;
+}
+
+h1 {
+    margin: 0;
+    color: var(--accent-color2);
+    font-weight: 700;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+section {
+    border: 1px var(--accent-color1) dotted;
+    border-radius: 20px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding: 0 10px 0 10px;
+}
+
+a {
+    color: rgb(87 39 0);
+}

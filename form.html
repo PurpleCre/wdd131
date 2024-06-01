@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Form design principles in action for responsive web design"
+    />
+    <meta name="author" content="Panashe Gonese" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <title>Product Review Form</title>
+
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <main>
+      <form action="review.html" method="get">
+        <fieldset>
+          <label for="product-name">Product Name</label>
+          <select name="product-name" id="product-name">
+            <option value="" disabled selected>Choose a product...</option>
+          </select>
+          <label
+            >Overall Rating</label
+          >
+          <div class="stars">
+            <input
+              type="radio"
+              id="fivestar"
+              name="stars"
+              value="5"
+              required
+            /><label for="fivestar"></label>
+            <input
+              type="radio"
+              id="fourstar"
+              name="stars"
+              value="4"
+              required
+            /><label for="fourstar"></label>
+            <input
+              type="radio"
+              id="threestar"
+              name="stars"
+              value="3"
+              required
+            /><label for="threestar"></label>
+            <input
+              type="radio"
+              id="twostar"
+              name="stars"
+              value="2"
+              required
+            /><label for="twostar"></label>
+            <input
+              type="radio"
+              id="onestar"
+              name="stars"
+              value="1"
+              required
+            /><label for="onestar"></label>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🌴 Panashe Gonese 🌴 Zimbabwe</p>
+      <p id="lastmodified"></p>
+    </footer>
+  </body>
+</html>
