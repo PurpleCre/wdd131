@@ -1,51 +1,141 @@
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  border: #000 1px solid;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  background-color: rgb(63, 1, 90);
+  padding: 10px 0 10px 0;
+  margin: 0;
+  color: aliceblue;
+}
+
+/* Stars rating */
+
 input[type="radio"] {
-	display: none;
-	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
+  display: none;
+  position: relative;
+  caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  gap: 30px;
 }
 
 .stars > label {
-	color: gold;
-	width: 30px;
-	height: 30px;
-	font-size: 2rem;
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+  color: gold;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+  margin-left: 5px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars > label:hover {
-	color: #000;
+  color: #000;
 }
 
 .stars > label::before {
-	content: "\2606";
+  content: "\2606";
 }
 
 .stars input:checked ~ label::before {
-	content: "\2605";
+  content: "\2605";
 }
 
+label {
+  display: block;
+  padding-top: 1rem;
+  color: rgb(161, 15, 15);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 20px auto;
+  font-size: larger;
+  max-width: 90%;
+}
+
+legend {
+  padding: 0 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  background-color: rgb(131, 95, 151);
+  border: solid 1.5px rgb(133, 15, 15);
+  border-radius: 6px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="date"] {
+  width: 87%;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(yellow, orange);
+  color: black;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  box-shadow: 1px 1px 4px #9e2323;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+textarea::placeholder {
+  color: yellow;
+}
+
+input:required,
+select:required {
+  border-left: solid 8px #db1414;
+}
+
+input:required,
+select:required:valid {
+  border-left: solid 8px green;
+  background-color: greenyellow;
+}
+
+/* Footer */
+
 footer {
-    background-color: rgb(63, 1, 90);
-    text-align: center;
-    font-family: var(--footer);
-    font-size: x-large;
-  }
-  
-  footer p:first-of-type {
-    padding-top: 15px;
-    color: aliceblue;
-  }
-  
-  footer p:last-of-type {
-    padding-bottom: 15px;
-    color: var(--accent-color-1);
-  }
+  background-color: rgb(63, 1, 90);
+  text-align: center;
+  font-family: var(--footer);
+  font-size: x-large;
+}
+
+footer p:first-of-type {
+  padding-top: 15px;
+  color: aliceblue;
+}
+
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
+  margin: 0;
+}
