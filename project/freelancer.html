@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Collective - Join Us</title>
+    <meta
+      name="description"
+      content="Freelancerpage for The Collective - a freelance website"
+    />
+    <meta name="author" content="Panashe Gonese" />
+    <link rel="stylesheet" href="styles/freelancer.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Rafting Site Logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="freelancer.html">Freelancer</a>
+      </nav>
+      <a id="join" href="sign-up.html"><button>Join Us!!!</button></a>
+      <a href="sign-in.html">Sign In</a>
+    </header>
+    <main>
+      <h1>Hear lies the den of Freelancers</h1>
+      <div class="fancy">
+        <p>
+          <span><a href="">Add a service</a></span> or
+          <span><a href="">Manage existing services</a></span>
+        </p>
+      </div>
+      <div id="services">
+        <h1>My Services</h1>
+        <p id="hide">You do not have any services yet... Add some.</p>
+        <div class="cards"></div>
+      </div>
+      <div id="add">
+        <h1>Fill in your service's information.</h1>
+        <form action="" method="get" id="wf3">
+          <fieldset>
+            <label>Service Name <input type="text" id="name" required /></label>
+            <label
+              >Service Type
+              <select name="type" id="type" required>
+                <option value="" selected disabled>Select a type...</option>
+                <option value="data">Data Entry</option>
+                <option value="proofreading">Proofreading</option>
+                <option value="web">Web Testing</option>
+                <option value="beta">Beta Testing</option>
+              </select></label
+            >
+            <label>Price <input type="number" id="price" required /></label>
+          </fieldset>
+          <fieldset>
+            <textarea
+              name="review"
+              id="review"
+              rows="10"
+              placeholder="Enter Description Here"
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <button>Add Service</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🌴 Panashe Gonese 🌴 Zimbabwe</p>
+      <p id="lastmodified"></p>
+    </footer>
+  </body>
+</html>

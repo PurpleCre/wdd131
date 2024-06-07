@@ -1,0 +1,114 @@
+:root {
+  --main-color: #7a007fff;
+  --accent-color2: rgb(222 149 255);
+  --text-color: rgb(10 48 118);
+  --bg-color: #b4c5e4ff;
+  --accent-color1: rgb(255, 115, 0);
+  --button-color: linear-gradient(yellow, orange);
+
+  --main-font: "Roboto", sans-serif;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: var(--bg-color);
+}
+
+/* header stuff */
+header img {
+  margin: 0 0.5rem;
+  width: 120px;
+  height: auto;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10rem 2fr 200px 1fr;
+  gap: 60px;
+  background: var(--main-color);
+  margin-bottom: 44px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  border: double 3px #05000a;
+  background-color: var(--accent-color2);
+}
+
+header nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  border-right: double 3px var(--accent1-color);
+  padding-right: 40px;
+}
+
+header nav a:last-of-type {
+  border-right: none;
+}
+
+header a {
+  justify-self: last baseline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color1);
+}
+
+#join {
+  width: 148px;
+}
+
+button {
+  border-radius: 16px;
+  background-image: var(--button-color);
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 80%;
+  box-shadow: 1px 1px 4px #9e2323;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* terms */
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+div {
+    border: 3px black solid;
+    border-radius: 16px;
+    background-color: var(--accent-color1);
+    height: 1000px;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+}
+
+/* footer */
+footer {
+  background-color: rgb(63, 1, 90);
+  text-align: center;
+  font-size: medium;
+}
+
+footer p:first-of-type {
+  padding-top: 15px;
+  color: aliceblue;
+}
+
+footer p:last-of-type {
+  padding-bottom: 15px;
+  color: yellow;
+}

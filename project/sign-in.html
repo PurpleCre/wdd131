@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Collective - Join Us</title>
+    <meta
+      name="description"
+      content="sign in page for The Collective - a freelance website"
+    />
+    <meta name="author" content="Panashe Gonese" />
+    <link rel="stylesheet" href="styles/sign-in.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Rafting Site Logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="freelancer.html">Freelancer</a>
+      </nav>
+      <a id="join" href="sign-up.html"><button>Join Us!!!</button></a>
+      <a href="sign-in.html">Sign In</a>
+    </header>
+    <main>
+        <form action="success.html" method="get" class="wf2">
+            <img src="images/logo.png" alt="The Collective logo">
+            <h1>WELCOME BACK</h1>
+            <p>Take the first step. Create your account. Your world and characters await!</p>
+            <fieldset>
+                <label>Username<input type="text" name="name" id="name" required></label>
+                <label>Password<input type="text" name="password" id="password" required></label>
+            </fieldset>
+            <fieldset>
+                <label><input type="checkbox" name="human" id="human">Are You Human?</label>
+            </fieldset>
+            <input type="submit" value="Sign In">
+            <p>We care for you and your experience!</p>
+        </form>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span> 🌴 Panashe Gonese 🌴 Zimbabwe</p>
+      <p id="lastmodified"></p>
+    </footer>
+  </body>
+</html>
