@@ -10,6 +10,7 @@
     />
     <meta name="author" content="Panashe Gonese" />
     <link rel="stylesheet" href="styles/sign-in.css" />
+    <script src="scripts/local.js" defer></script>
   </head>
   <body>
     <header>
@@ -30,12 +31,12 @@
             <p>Take the first step. Create your account. Your world and characters await!</p>
             <fieldset>
                 <label>Username<input type="text" name="name" id="name" required></label>
-                <label>Password<input type="text" name="password" id="password" required></label>
+                <label>Password<input type="password" name="password" id="password" required></label>
             </fieldset>
             <fieldset>
                 <label><input type="checkbox" name="human" id="human">Are You Human?</label>
             </fieldset>
-            <input type="submit" value="Sign In">
+            <input type="submit" value="Sign In" id="button">
             <p>We care for you and your experience!</p>
         </form>
     </main>
